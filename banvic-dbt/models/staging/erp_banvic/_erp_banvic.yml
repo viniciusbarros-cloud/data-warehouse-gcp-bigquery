@@ -1,0 +1,76 @@
+
+sources: 
+  - name: erp
+    description: Este é o sistema ERP da Banvic com dados de clientes, coloboradores e transações.
+    schema: erp_banvic
+    tables:
+        - name: localidades
+          description: Tabela fonte de localidades de informações de cidade e de estado.
+          columns:
+            - name: cod_localidade
+              description: Chave primária da tabela localidade
+              data_tests:
+              - unique
+              - not_null
+                              
+
+        - name: clientes
+          description: Tabela fonte de clientes com informações pessoais de cada cliente da banvic.
+          columns:
+            - name: cod_cliente
+              description: Chave primária da tabela clientes
+              data_tests:
+              - unique
+              - not_null
+
+        - name: agencias
+          description: Tabela fonte de agências com informações como código,endereço, data de abertura,etc.
+          columns:
+            - name: cod_agencia
+              description: Chave primária da tabela agências
+              data_tests:
+              - unique
+              - not_null
+
+        - name: colaboradores
+          description: Tabela fonte de colocaboradores com informações pessoais de cada colaborador da banvic.
+          columns:
+            - name: cod_colaborador
+              description: Chave primária da tabela colaboradores
+              data_tests:
+              - unique
+              - not_null
+
+       
+        - name: colaborador_agencia
+          data_tests:
+            - dbt_utils.unique_combination_of_columns:
+               arguments:
+                combination_of_columns: ['cod_colaborador', 'cod_agencia']
+               
+
+        - name: contas
+          description: Tabela que registra as informações das contas bancárias dos clientes, incluindo número da conta, agência, saldo, tipo de conta e data de abertura
+          columns:
+            - name: num_conta
+              data_tests:
+                - unique
+                - not_null
+        
+        - name: propostas_credito
+          description: Tabela que armazena as propostas de crédito feitas aos clientes, incluindo dados como taxa de juros, valor da proposta, valor financiado, parcelas 
+          columns:
+            - name: cod_proposta
+              data_tests:
+                - unique
+                - not_null
+
+        - name: transacoes
+          description: Tabela que registra as transações realizadas nas contas dos clientes, incluindo tipo da transação, valor e data da transação
+          columns:
+            - name: cod_transacao
+              data_tests:
+                - unique
+                - not_null
+          
+
