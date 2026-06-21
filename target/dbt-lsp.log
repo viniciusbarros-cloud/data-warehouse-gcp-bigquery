@@ -1,0 +1,20 @@
+==================== 2026-06-21T19:06:58.404951Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-21T19:06:58.405038Z | bd4ce28f-a0d0-4737-892d-fa88d9839430 ====================
+19:06:58.405058 [info ]: Starting dbt LSP server
+19:06:58.405072 [info ]: Connecting to LSP client on port 57309
+19:06:58.405276 [info ]: Successfully connected to LSP client
+19:06:58.405292 [info ]: Creating LSP service...
+19:06:58.466647 [info ]: Creating LSP server...
+19:06:58.466671 [info ]: Starting LSP server...
+19:06:58.909119 [info ]: Started loading project
+19:06:58.909209 [info ]: Finished loading project [  0.00s]
+==================== 2026-06-21T19:10:29.847125Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-21T19:10:29.847219Z | 2599a0a5-63c5-455b-9a9e-93582348f87f ====================
+19:10:29.847241 [info ]: Starting dbt LSP server
+19:10:29.847257 [info ]: Connecting to LSP client on port 35909
+19:10:29.847457 [info ]: Successfully connected to LSP client
+19:10:29.847474 [info ]: Creating LSP service...
+19:10:29.907806 [info ]: Creating LSP server...
+19:10:29.907827 [info ]: Starting LSP server...
+19:10:30.353856 [info ]: Started loading project
+19:10:30.353943 [info ]: Finished loading project [  0.00s]

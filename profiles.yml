@@ -1,0 +1,82 @@
+user:
+  outputs:
+    default:
+      keyfile_json:
+        auth_provider_x509_cert_url: https://www.googleapis.com/oauth2/v1/certs
+        auth_uri: https://accounts.google.com/o/oauth2/auth
+        client_email: dbt-user@analytics-engineering-vinicius.iam.gserviceaccount.com
+        client_id: '110499667298359845535'
+        client_x509_cert_url: https://www.googleapis.com/robot/v1/metadata/x509/dbt-user%40analytics-engineering-vinicius.iam.gserviceaccount.com
+        private_key: '-----BEGIN PRIVATE KEY-----
+
+          MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCmKaP4Gqi5w/mc
+
+          9eQATmGHrSsRSY0nRdgUtbiz1/Q+eVn7/5bqZiZ9L8Ovg9K8pKmWHw3Tk8IzC4Ej
+
+          F1PQCCcJZ22pYN5H5Ip+IxttjMrBtWFWOdYHefeGUkoFpoI2ttnBy7biYJ6IVpbD
+
+          tEFa/vbNHBfhTrW8OiwzQuZe0SuVDOCrzFwtOErkT3X4WURGNuUSgt25LqBxP0CS
+
+          v37r23gHXCYiy3p6ZzxNUsmaIQwemkDShrRxu35GaZlPNmA3AeGu0U692IU+HoM/
+
+          dAQotI1z/+bZRznyoxzDcCHM197PNvuPSvUiUcYMtwzJm71Zr9LypiEYaeDpOZtV
+
+          g8OkoRGPAgMBAAECggEAS2lnnPEAdXrPfSCNz2PDWM/LVYezk8jblh6ZSqnulDIA
+
+          GGH57LzaqAM3BR/HU01KGDNU05riTsdgXvw10hr5GIgD2ZT4nNlIz5GAX7o/xSVc
+
+          HUWXcQI2SBRtut3EiC95ab5abKhcGtVtjDlxVeqUOSeQYPWXfmtKZyNsKUk2Rej8
+
+          jWOEa84B5iriQNZy2cjUzyN0r3S0yTMmeJN1xi4Njj1dKJ39gz/E0qRPNXjAmhp+
+
+          Wu5GUgl/PYH1R8ckrgDLZXWAi0RUubg2fI7zDvvq0g9uAuq5nU/hk74c6InI90W+
+
+          LZU/EmjuOhDvsQ6OVvFfGKTJC+AO7SF8MXvgbYXP4QKBgQDRXzzYONluN/+2LMpe
+
+          j7Dole8EREguDynnBWdDyvc1XJSiqo7Z275pHfvdWCn4oPRMY5aiKXaUNEwr9Ci3
+
+          y5v2oIiBYJ1Mr6d0n7wBY3aGMs5XKn1LIx4QiTLUiCEyIqq1D3ptX42Q2QQVXtY3
+
+          etwqbifuftHc36pfvDp9BoIEbwKBgQDLKvD9kDVGoaQLy/K0tAIzWPA0By4Y7HCy
+
+          qo+6zWfub+88QZPIyCsRjkXTlnssrzx5GMgHpDbW8jYw7KhF4/kEAmdFS4co7Qek
+
+          nmO7F7SXIwP8q1OoAEuRQC9py3UkMHJ+aDO+ysikvTTIT7sVaHeFVRL6xisMrm4f
+
+          nRcDHmWU4QKBgCJfNzbsBk4A5Xr72XEyt8FHNAkISK0/Egr6KRzJClJ5U3Fs/Kyp
+
+          VZYeNQX+fk1x5wlPZCBVHEFyYHrqx3B8/aq8agyLVueLAruzqYK02HVpi9RlhlI6
+
+          fqoKTAz2GDUJ2eqFkvy3rh70caYsfpB3HAPfN7EAouVW1rqGxTdXRSsDAoGABy02
+
+          JA7TAvK0w8Hpid6N8Vhj68KRK0o21OjXeObGlBKaJcu/N6lydAVNjCLVqQdroG9y
+
+          qWpwkXku1t2VOBrMcgrPsQ/w704oJfV+Wl6E/426F1PJ+bZA9RmKUzdfpO6dLL/r
+
+          jALHwaH5WlYOqrvs9OXDbN5RKPqEY1N+O5r4RaECgYEAw1JXnFD5G55qqJJhAyc3
+
+          DS2BqyjvCPH0DaeH8vbs2AeZBbLFjOgeJa89fmkfbhPVcdmIIjSrJekbgarbid//
+
+          zg+QIKXYPDDTtT7jXNnjTsDt1pSIpFnh8PLtoWWngWsc2EjUOUxw0C1DFkgYhkQx
+
+          XMYiwzWhpoWhLMlF2fzqWyE=
+
+          -----END PRIVATE KEY-----
+
+          '
+        private_key_id: 4bffb7c56ecf70083c0262bed13ce1ea79a7c4db
+        project_id: analytics-engineering-vinicius
+        token_uri: https://oauth2.googleapis.com/token
+        type: service_account
+      method: service-account-json
+      project: analytics-engineering-vinicius
+      schema: dev_banvic
+      scopes:
+      - https://www.googleapis.com/auth/bigquery
+      - https://www.googleapis.com/auth/cloud-platform
+      - https://www.googleapis.com/auth/drive
+      - https://www.googleapis.com/auth/userinfo.email
+      target_name: default
+      threads: 4
+      type: bigquery
+  target: default
