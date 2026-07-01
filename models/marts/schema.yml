@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: dim_clientes
+    description: "Tabela dimensional com o cadastro único de tomadores de crédito."
+    columns:
+      - name: sk_cliente
+        description: "Chave primária do cliente (member_id)."
+        tests:
+          - unique
+          - not_null
+
+  - name: fato_emprestimos
+    description: "Tabela fato contendo as métricas financeiras e status dos empréstimos."
+    columns:
+      - name: loan_id
+        description: "Chave primária do empréstimo."
+        tests:
+          - unique
+          - not_null
