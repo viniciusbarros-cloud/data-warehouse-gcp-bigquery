@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: bronze_zone
+    project: fintech-credit-risk  # Substitua pelo ID do seu projeto lá no Google Cloud!
+    dataset: bronze_zone
+    tables:
+      - name: raw_loans
