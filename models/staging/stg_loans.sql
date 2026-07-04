@@ -1,12 +1,21 @@
+{{ config(materialized='view') }} -- ou 'table', dependendo de como você configurou
+
 with source_data as (
-    select * from {{ source('bronze_zone', 'raw_loans') }}
+    select 
+        *,
+        -- CRIANDO A BASE DA CHAVE: Ordenamos por valores financeiros para garantir 
+        -- um índice determinístico e único para cada linha.
+        row_number() over (order by loan_amnt, funded_amnt, installment, annual_inc) as row_idx
+    from {{ source('bronze_zone', 'raw_loans') }}
 ),
 
 cleaned_data as (
     select
-        cast(id as string) as loan_id,
-        cast(member_id as string) as member_id,
+        -- CORREÇÃO DOS NULOS: Substituímos o 'id' vazio pelo nosso índice
+        cast(row_idx as string) as loan_id,
+        concat('CLI_', cast(row_idx as string)) as member_id,
 
+        -- DAQUI PARA BAIXO, TUDO É O SEU CÓDIGO ORIGINAL INTACTO:
         cast(loan_amnt as float64) as loan_amount,
         cast(funded_amnt as float64) as funded_amount,
         cast(installment as float64) as monthly_installment,
