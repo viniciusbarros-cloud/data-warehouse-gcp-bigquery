@@ -35,9 +35,9 @@ A arquitetura foi desenhada para ser escalável e tolerante a falhas, garantindo
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="img/arquitetura_fintech_Medallion_Arquiteture_white.drawio.svg">
-    <source media="(prefers-color-scheme: light)" srcset="img/arquitetura_fintech_Medallion_Arquiteture_dark.drawio.svg">
-    <img alt="Arquitetura do Projeto" src="img/arquitetura_fintech_Medallion_Arquiteture_dark.drawio.svg" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="img/arquitetura_fintech_Medallion_white.png">
+    <source media="(prefers-color-scheme: light)" srcset="img/arquitetura_fintech_Medallion_white.png">
+    <img alt="Arquitetura do Projeto" src="img/arquitetura_fintech_Medallion_white.png" width="100%">
   </picture>
 </div>
 
@@ -59,9 +59,9 @@ Para suportar as análises no Power BI, a camada final (Gold/Marts) foi modelada
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="img/data_mart_model_fintech_white.drawio.svg">
-    <source media="(prefers-color-scheme: light)" srcset="img/data_mart_model_fintech_dark.drawio.svg">
-    <img alt="Modelo Data Mart" src="img/data_mart_model_fintecg_dark.drawio.svg" width="80%">
+    <source media="(prefers-color-scheme: dark)" srcset="img/arquitetura_fintech_white.png">
+    <source media="(prefers-color-scheme: light)" srcset="img/arquitetura_fintech_white.png">
+    <img alt="Modelo Data Mart" src="img/data_mart_model_white.png" width="80%">
   </picture>
 </div>
 
