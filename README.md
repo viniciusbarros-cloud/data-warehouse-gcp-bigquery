@@ -8,9 +8,9 @@
 
 ---
 
-## 🎯 1. O Problema de Negócio
+## 🎯 1. O Problema de Negócio (Engenharia de Analytics)
 
-A equipa de Risco e a Diretoria Executiva carecem de uma fonte única da verdade (*Single Source of Truth*) automatizada e confiável. Atualmente, a empresa não consegue responder de forma rápida e precisa a cinco perguntas cruciais:
+A equipe de Risco e a Diretoria Executiva carecem de uma fonte única da verdade (*Single Source of Truth*) automatizada e confiável. Atualmente, a empresa não consegue responder de forma rápida e precisa a cinco perguntas cruciais:
 
 1. Qual é o volume financeiro e a quantidade de crédito concedido mensalmente?
 2. Qual é o perfil demográfico e financeiro dos clientes que estão a tomar crédito?
